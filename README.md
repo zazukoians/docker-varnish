@@ -20,19 +20,19 @@ Default parameters were taken from the [The Varnish Tutorial](https://www.varnis
 
 The pre built image can be downloaded using Docker.
 
-    $ docker pull TODO/varnish
+    $ docker pull zazukoians/varnish
 
 
 ### Build the docker image by yourself
 
 You can also adjust and build the image according to your needs. Just clone the repository and then execute the build command.
 
-    $ docker build -t varnish .
+    $ docker build -t zazukoians/varnish .
 
 
 ### Start the container
 
-    $ sudo docker run -i -d -p 80 TODO/varnish
+    $ sudo docker run -i -d -p 80 zazukoians/varnish
 
 Note that this alone won't be very useful as the default configuration points to a backend server on localhost port 8080. This will not work as there is no such server running in this image. Instead combine this image with an instance of an application container.
 
@@ -41,5 +41,5 @@ _TODO add an example_
 #### Start the container and keep control
 The command above starts the container and runs it in foreground. You can get a console in this image by executing
 
-    $ docker run -ti -p 443 - TODO/varnish /bin/bash
+    $ docker run -ti -p 443 - zazukoians/varnish /bin/bash
 
