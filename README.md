@@ -1,4 +1,4 @@
-# Varnish Cache Docker image with latest stable version (4.1.x) [![Build Status](https://travis-ci.org/zazukoians/docker-varnish.svg)](https://travis-ci.org/zazukoians/docker-varnish)
+# Varnish Cache Docker image with latest stable version (4.1.x) [![Build Status](https://travis-ci.org/zazukoians/docker-varnish.svg)](https://travis-ci.org/zazukoians/docker-varnish)[![](https://imagelayers.io/badge/zazukoians/varnish:latest.svg)](https://imagelayers.io/?images=zazukoians/varnish:latest 'Get your own badge on imagelayers.io')
 
 This Docker image ships [Varnish Cache](https://www.varnish-cache.org/), a HTTP accelerator designed for content-heavy dynamic web sites as well as heavily consumed APIs by Varnish Software. It is based on [Baseimage-docker](https://github.com/phusion/baseimage-docker), which is a Docker optimized version of Ubuntu LTS.
 
