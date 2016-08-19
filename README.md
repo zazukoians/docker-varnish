@@ -6,6 +6,8 @@ If you have any problems with this image please report issues on Github. Pull re
 
 Varnish is pulled from the offical Ubuntu LTS package repository by varnish-cache.org. This allows us to use the latest stable version 4.1.x of Varnish Cache.
 
+We originally planned to build it on Alpine Linux to get a smaller image but had no luck with the build process there. We might re-try that another time.
+
 ### Varnish environment variables
 
 You can change its behaviour by changing the following environment variables:
