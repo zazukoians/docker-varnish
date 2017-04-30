@@ -6,7 +6,7 @@ If you have any problems with this image please report issues on Github. Pull re
 
 Varnish is pulled from the offical Ubuntu LTS package repository by varnish-cache.org. This allows us to use the latest stable version 4.1.x of Varnish Cache.
 
-We originally planned to build it on Alpine Linux to get a smaller image but had no luck with the build process there. We might re-try that another time.
+We originally planned to build it on Alpine Linux to get a smaller image but had no luck with the build process there. We might re-try that another time. There is a unfinished build script available in `build.sh`. If you get the build to work, pull requests would be very welcome.
 
 ### Varnish environment variables
 
@@ -34,7 +34,7 @@ You can also adjust and build the image according to your needs. Just clone the 
 
 ### Start the container
 
-    $ sudo docker run -i -d -p 80 zazukoians/varnish
+    $ docker run -i -d -p 80 zazukoians/varnish
 
 Note that this alone won't be very useful as the default configuration points to a backend server on localhost port 8080. This will not work as there is no such server running in this image. Instead combine this image with an instance of an application container.
 
