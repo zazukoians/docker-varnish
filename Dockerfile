@@ -1,9 +1,10 @@
 FROM phusion/baseimage
 MAINTAINER Adrian Gschwend <adrian.gschwend@zazuko.com>
 
-RUN apt-get install -y apt-transport-https 
-RUN curl https://repo.varnish-cache.org/GPG-key.txt | apt-key add -
-RUN echo "deb https://repo.varnish-cache.org/ubuntu/ trusty varnish-4.1" >> /etc/apt/sources.list.d/varnish-cache.list
+COPY varnishcache_varnish41.list /etc/apt/sources.list.d/
+RUN apt-get update
+RUN apt-get install -y curl gnupg apt-transport-https 
+RUN curl -L https://packagecloud.io/varnishcache/varnish41/gpgkey | apt-key add -
 RUN apt-get update && apt-get upgrade -y -o Dpkg::Options::="--force-confold"
 RUN apt-get -y install varnish
 

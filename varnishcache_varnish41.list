@@ -1,0 +1,2 @@
+deb https://packagecloud.io/varnishcache/varnish41/ubuntu/ trusty main
+deb-src https://packagecloud.io/varnishcache/varnish41/ubuntu/ trusty main
