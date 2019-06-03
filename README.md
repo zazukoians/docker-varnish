@@ -27,3 +27,7 @@ FROM zazukoians/varnish:<choose a version>
 
 COPY your-varnish-config-file.vcl /etc/varnish/default.vcl
 ```
+
+### SSL/TLS termination
+
+Varnish does not support SSL/TLS termination. If you need this consider using something like [traefik](https://traefik.io/) or [hitch](https://github.com/varnish/hitch) in front. For hitch, we provide a Docker image [here](https://hub.docker.com/r/zazukoians/hitch).
